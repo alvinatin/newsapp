@@ -1,4 +1,4 @@
-package com.alvin.newsapp;
+package com.alvin.newsapp.view.activity;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -9,6 +9,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.alvin.newsapp.R;
 import com.alvin.newsapp.model.Article;
 
 public class ArticleWebView extends Activity {

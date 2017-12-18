@@ -1,4 +1,4 @@
-package com.alvin.newsapp;
+package com.alvin.newsapp.view.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -8,8 +8,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.alvin.newsapp.R;
+import com.alvin.newsapp.SourceListener;
 import com.alvin.newsapp.adapter.SourceMenuAdapter;
-import com.alvin.newsapp.api.ApiController;
 import com.alvin.newsapp.api.NewsSourceService;
 import com.alvin.newsapp.model.Source;
 import com.alvin.newsapp.model.SourceResponse;
@@ -17,7 +18,7 @@ import com.alvin.newsapp.model.SourceResponse;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements SourceListener{
+public class MainActivity extends AppCompatActivity implements SourceListener {
 
     public static final String SOURCE_EXTRA = "SOURCE_EXTRA";
     List<Source> sources;

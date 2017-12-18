@@ -1,12 +1,10 @@
-package com.alvin.newsapp;
+package com.alvin.newsapp.view.activity;
 
 import android.app.ProgressDialog;
 import android.app.SearchManager;
-import android.app.SearchableInfo;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,15 +15,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
+import com.alvin.newsapp.ArticleListener;
+import com.alvin.newsapp.R;
 import com.alvin.newsapp.adapter.ArticleMenuAdapter;
 import com.alvin.newsapp.api.HeadlineService;
 import com.alvin.newsapp.model.Article;
 import com.alvin.newsapp.model.ArticleResponse;
 import com.alvin.newsapp.model.Source;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;

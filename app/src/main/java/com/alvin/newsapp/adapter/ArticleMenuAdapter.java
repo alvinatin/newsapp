@@ -79,6 +79,11 @@ public class ArticleMenuAdapter extends RecyclerView.Adapter<ArticleMenuAdapter.
                     .error(R.drawable.placeholder_image)
                     .into(holder.ivArticle);
         }
+        else{
+            Glide.with(mContext)
+                    .load(R.drawable.placeholder_image)
+                    .into(holder.ivArticle);
+        }
         holder.tvArticle.setText(article.getTitle());
     }
 
