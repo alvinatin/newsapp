@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="search_hint">Search Article</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="menu_search">Menu Search</string>
+</resources>
